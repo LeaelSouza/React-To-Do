@@ -38,7 +38,7 @@ function Tarefas() {
         });
         setListaTarefas(novasTarefas);
         localStorageCadastro(novasTarefas);
-        setEdicaoAtiva(null); // Finaliza a edição
+        setEdicaoAtiva(null); 
     }
 
     function handleKeyPress(event, index) {
@@ -50,7 +50,7 @@ function Tarefas() {
     function marcarComoConcluida(index) {
         const novasTarefas = listaTarefas.map((tarefa, i) => {
             if (i === index) {
-                return { ...tarefa, finalizado: !tarefa.finalizado }; // Alterna o estado finalizado
+                return { ...tarefa, finalizado: !tarefa.finalizado }; 
             }
             return tarefa;
         });
@@ -81,7 +81,7 @@ function Tarefas() {
                         backgroundColor: 'Black',
                         textDecoration: pegaEstilo(tarefa),
                         padding: '5px',
-                        position: 'relative', // Permite posicionamento absoluto dos botões
+                        position: 'relative', 
                     }} onClick={() => marcarComoConcluida(index)}> {/* Adiciona a função ao clicar na tarefa */}
                         <span style={{ position: 'absolute', right: '0', marginRight: '3px' }}>
                             <button
@@ -90,7 +90,7 @@ function Tarefas() {
                                     color: 'white',
                                     padding: '3px',
                                     border: '1px solid white',
-                                    marginRight: '3px', // Espaçamento entre os botões
+                                    marginRight: '3px', 
                                 }}
                                 onClick={() => deletarTarefa(index)}
                             >
@@ -102,7 +102,7 @@ function Tarefas() {
                                     color: 'white',
                                     padding: '3px',
                                     border: '1px solid white',
-                                    marginRight: '3px', // Espaçamento entre os botões
+                                    marginRight: '3px', 
                                 }}
                                 onClick={() => setEdicaoAtiva(index)}
                             >
