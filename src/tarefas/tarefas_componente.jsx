@@ -88,9 +88,9 @@ function Tarefas() {
                                 style={{
                                     backgroundColor: 'red',
                                     color: 'white',
-                                    padding: '3px',
+                                    padding: '2px',
                                     border: '1px solid white',
-                                    marginRight: '3px', 
+                                    marginRight: '2px', 
                                 }}
                                 onClick={() => deletarTarefa(index)}
                             >
@@ -98,11 +98,11 @@ function Tarefas() {
                             </button>
                             <button
                                 style={{
-                                    backgroundColor: 'orange',
-                                    color: 'white',
-                                    padding: '3px',
+                                    backgroundColor: 'yellow',
+                                    color: 'black',
+                                    padding: '2px',
                                     border: '1px solid white',
-                                    marginRight: '3px', 
+                                    marginRight: '2px', 
                                 }}
                                 onClick={() => setEdicaoAtiva(index)}
                             >
